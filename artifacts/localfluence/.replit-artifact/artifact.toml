@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Localfluence"
+version = "1.0.0"
+id = "artifacts/localfluence"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18933
+
+[services.development]
+run = "pnpm --filter @workspace/localfluence run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/localfluence", "run", "build" ]
+publicDir = "artifacts/localfluence/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18933"
+BASE_PATH = "/"

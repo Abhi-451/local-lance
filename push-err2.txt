@@ -1,0 +1,10 @@
+﻿
+> @workspace/db@0.0.0 push C:\Users\abhishek\Downloads\localfluence\lib\db
+> drizzle-kit push --config ./drizzle.config.ts
+
+Reading config file 'C:\Users\abhishek\Downloads\localfluence\lib\db\drizzle.config.ts'
+Error  No schema files found for path config ['C:\Users\abhishek\Downloads\localfluence\lib\db\src\schema\index.ts']
+Error  If path represents a file - please make sure to use .ts or other extension in the path
+C:\Users\abhishek\Downloads\localfluence\lib\db:
+ΓÇëERR_PNPM_RECURSIVE_RUN_FIRST_FAILΓÇë @workspace/db@0.0.0 push: `drizzle-kit push --config ./drizzle.config.ts`
+Exit status 1

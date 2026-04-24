@@ -1,0 +1,251 @@
+You are a senior full-stack engineer and system architect.
+
+Your task is to build a **production-ready MVP WEB APPLICATION (browser-based, NOT a mobile app)** called **"Localfluence"**.
+
+This is a **responsive full-stack web app** that must work on:
+
+* Desktop browsers
+* Mobile browsers (responsive design only)
+
+Do NOT build a mobile app (no React Native, no Flutter).
+
+---
+
+## 🧠 PRODUCT OVERVIEW
+
+Localfluence is a two-sided marketplace that connects:
+
+* Businesses (who want to promote locally)
+* Influencers (who create content for local audiences)
+
+The platform enables **location-based influencer discovery**, **campaign collaboration**, and **direct communication**.
+
+---
+
+## 👥 USER ROLES
+
+### 1. Business User
+
+* Search and filter influencers by location and category
+* Create campaigns
+* Send collaboration requests
+* Chat with influencers
+* Track collaborations
+
+### 2. Influencer User
+
+* Create and manage profile
+* Receive collaboration requests
+* Accept or reject requests
+* Chat with businesses
+
+---
+
+## 🏗️ TECH STACK REQUIREMENTS
+
+Build using:
+
+* Frontend: Next.js (App Router preferred)
+* Backend: Node.js with Express
+* Database: PostgreSQL
+* ORM: Prisma
+* Authentication: JWT-based authentication
+* Styling: Tailwind CSS
+
+Ensure clean architecture, modular code, and scalability.
+
+---
+
+## 🔐 AUTHENTICATION
+
+* Email + password signup/login
+* Role selection: Business or Influencer
+* JWT-based session handling
+* Protected routes for authenticated users
+
+---
+
+## 🧩 CORE FEATURES (MVP)
+
+### 1. User Profiles
+
+#### Influencer Profile:
+
+* Name
+* Bio
+* Location (City + Area)
+* Category (e.g., fitness, food, fashion)
+* Social links (Instagram, YouTube)
+* Followers count (manual input)
+* Profile image
+
+#### Business Profile:
+
+* Company name
+* Industry
+* Location
+* Description
+
+---
+
+### 2. Influencer Discovery
+
+Create a search page where businesses can:
+
+* Filter influencers by:
+
+  * City / Area
+  * Category
+  * Followers range
+* View influencer cards
+* Open detailed influencer profiles
+
+---
+
+### 3. Campaign Management
+
+Businesses can:
+
+* Create campaigns with:
+
+  * Title
+  * Description
+  * Budget
+  * Target location
+  * Deliverables (text)
+* View list of created campaigns
+
+---
+
+### 4. Collaboration Requests
+
+* Businesses send collaboration requests to influencers
+* Influencers can:
+
+  * Accept
+  * Reject
+
+Request statuses:
+
+* Pending
+* Accepted
+* Rejected
+* Completed
+
+---
+
+### 5. Messaging System
+
+* One-to-one chat between business and influencer
+* Store all messages in database
+* Real-time functionality is NOT required (basic polling is fine)
+
+---
+
+### 6. Dashboard
+
+#### Business Dashboard:
+
+* Created campaigns
+* Sent requests
+* Active collaborations
+
+#### Influencer Dashboard:
+
+* Incoming requests
+* Accepted collaborations
+
+---
+
+## 🗄️ DATABASE DESIGN (PRISMA)
+
+Design relational schema with the following models:
+
+* User (id, email, password, role)
+* Profile (linked to User)
+* Campaign (linked to Business user)
+* CollaborationRequest (links Business, Influencer, Campaign)
+* Message (senderId, receiverId, content, timestamp)
+
+Ensure proper relationships and foreign keys.
+
+---
+
+## ⚙️ API REQUIREMENTS (REST)
+
+Implement REST APIs for:
+
+* Authentication (signup, login)
+* Profile management (create, update, fetch)
+* Influencer discovery (search + filters)
+* Campaign management (CRUD)
+* Collaboration requests (send, accept, reject)
+* Messaging (send, fetch conversations)
+
+---
+
+## 🎨 UI REQUIREMENTS
+
+* Clean, modern UI using Tailwind CSS
+* Fully responsive design
+* Pages required:
+
+  * Login / Signup
+  * Dashboard (role-based)
+  * Influencer listing page
+  * Influencer profile page
+  * Campaign creation page
+  * Chat page
+
+---
+
+## 📁 PROJECT STRUCTURE
+
+Organize project as:
+
+/frontend → Next.js app
+/backend → Express API
+/prisma → schema and migrations
+
+Use environment variables for configuration.
+
+---
+
+## 🚀 MVP CONSTRAINTS
+
+* Do NOT over-engineer
+* No external APIs required
+* No real-time WebSockets required
+* Focus on complete working flow from start to finish
+
+---
+
+## 🧪 TEST FLOW (MUST WORK)
+
+1. Register as Business
+2. Search influencers
+3. Send collaboration request
+4. Login as Influencer
+5. Accept request
+6. Exchange messages
+
+---
+
+## 🔥 BONUS (OPTIONAL)
+
+* Add loading states
+* Add basic error handling
+* Seed database with sample users and influencers
+
+---
+
+## 🎯 OUTPUT REQUIREMENTS
+
+* Generate complete working codebase
+* Include setup instructions
+* Include Prisma migration steps
+* Ensure project runs locally without issues
+
+---
+
+Build this as a real MVP startup product with clean, readable, maintainable code.

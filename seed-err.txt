@@ -1,0 +1,192 @@
+﻿
+> @workspace/scripts@0.0.0 seed C:\Users\abhishek\Downloads\localfluence\scripts
+> tsx ./src/seed.ts
+
+Seeding Localfluence...
+node.exe : 
+DrizzleQueryError: 
+Failed query: delete 
+from "messages"
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (DrizzleQueryE   
+ rr...from "message    
+s":String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+params: 
+    at LibSQLPreparedQu
+ery.queryWithCache (C:\
+Users\abhishek\Download
+s\localfluence\node_mod
+ules\.pnpm\drizzle-orm@
+0.45.2_@libsql+client@0
+.14.0\node_modules\src\
+sqlite-core\session.ts:
+80:11)
+    at async LibSQLPrep
+aredQuery.run (C:\Users
+\abhishek\Downloads\loc
+alfluence\node_modules\
+.pnpm\drizzle-orm@0.45.
+2_@libsql+client@0.14.0
+\node_modules\src\libsq
+l\session.ts:197:10)
+    at async main (C:\U
+sers\abhishek\Downloads
+\localfluence\scripts\s
+rc\seed.ts:15:3) {
+  query: 'delete from 
+"messages"',
+  params: [],
+  cause: LibsqlError: 
+SQLITE_ERROR: no such 
+table: messages
+      at 
+mapSqliteError (file://
+/C:/Users/abhishek/Down
+loads/localfluence/node
+_modules/.pnpm/@libsql+
+client@0.14.0/node_modu
+les/@libsql/client/lib-
+esm/sqlite3.js:372:16)
+      at executeStmt (f
+ile:///C:/Users/abhishe
+k/Downloads/localfluenc
+e/node_modules/.pnpm/@l
+ibsql+client@0.14.0/nod
+e_modules/@libsql/clien
+t/lib-esm/sqlite3.js:27
+7:15)
+      at 
+Sqlite3Client.execute (
+file:///C:/Users/abhish
+ek/Downloads/localfluen
+ce/node_modules/.pnpm/@
+libsql+client@0.14.0/no
+de_modules/@libsql/clie
+nt/lib-esm/sqlite3.js:7
+9:16)
+      ... 5 lines 
+matching cause stack 
+trace ...
+      at 
+QueryPromise.then (C:\U
+sers\abhishek\Downloads
+\localfluence\node_modu
+les\.pnpm\drizzle-orm@0
+.45.2_@libsql+client@0.
+14.0\node_modules\src\q
+uery-promise.ts:31:15) 
+{
+    code: 
+'SQLITE_ERROR',
+    rawCode: 1,
+    [cause]: 
+SqliteError: no such 
+table: messages
+        at 
+convertError (C:\Users\
+abhishek\Downloads\loca
+lfluence\node_modules\.
+pnpm\libsql@0.4.7\node_
+modules\libsql\index.js
+:51:12)
+        at 
+Database.prepare (C:\Us
+ers\abhishek\Downloads\
+localfluence\node_modul
+es\.pnpm\libsql@0.4.7\n
+ode_modules\libsql\inde
+x.js:119:13)
+        at executeStmt 
+(file:///C:/Users/abhis
+hek/Downloads/localflue
+nce/node_modules/.pnpm/
+@libsql+client@0.14.0/n
+ode_modules/@libsql/cli
+ent/lib-esm/sqlite3.js:
+248:28)
+        at 
+Sqlite3Client.execute (
+file:///C:/Users/abhish
+ek/Downloads/localfluen
+ce/node_modules/.pnpm/@
+libsql+client@0.14.0/no
+de_modules/@libsql/clie
+nt/lib-esm/sqlite3.js:7
+9:16)
+        at <anonymous> 
+(C:\Users\abhishek\Down
+loads\localfluence\node
+_modules\.pnpm\drizzle-
+orm@0.45.2_@libsql+clie
+nt@0.14.0\node_modules\
+src\libsql\session.ts:1
+99:57)
+        at LibSQLPrepar
+edQuery.queryWithCache 
+(C:\Users\abhishek\Down
+loads\localfluence\node
+_modules\.pnpm\drizzle-
+orm@0.45.2_@libsql+clie
+nt@0.14.0\node_modules\
+src\sqlite-core\session
+.ts:78:18)
+        at LibSQLPrepar
+edQuery.run (C:\Users\a
+bhishek\Downloads\local
+fluence\node_modules\.p
+npm\drizzle-orm@0.45.2_
+@libsql+client@0.14.0\n
+ode_modules\src\libsql\
+session.ts:197:21)
+        at LibSQLPrepar
+edQuery.execute (C:\Use
+rs\abhishek\Downloads\l
+ocalfluence\node_module
+s\.pnpm\drizzle-orm@0.4
+5.2_@libsql+client@0.14
+.0\node_modules\src\sql
+ite-core\session.ts:183
+:34)
+        at 
+QueryPromise.execute (C
+:\Users\abhishek\Downlo
+ads\localfluence\node_m
+odules\.pnpm\drizzle-or
+m@0.45.2_@libsql+client
+@0.14.0\node_modules\sr
+c\sqlite-core\query-bui
+lders\delete.ts:301:26)
+        at 
+QueryPromise.then (C:\U
+sers\abhishek\Downloads
+\localfluence\node_modu
+les\.pnpm\drizzle-orm@0
+.45.2_@libsql+client@0.
+14.0\node_modules\src\q
+uery-promise.ts:31:15) 
+{
+      code: 
+'SQLITE_ERROR',
+      rawCode: 1
+    }
+  }
+}
+C:\Users\abhishek\Downloads\localfluence\scripts:
+ΓÇëERR_PNPM_RECURSIVE_RUN_FIRST_FAILΓÇë @workspace/scripts@0.0.0 seed: `tsx ./src/seed.ts`
+Exit status 1

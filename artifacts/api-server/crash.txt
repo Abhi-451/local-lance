@@ -1,0 +1,113 @@
+﻿
+> @workspace/api-server@0.0.0 dev C:\Users\abhishek\Downloads\localfluence\artifacts\api-server
+> pnpm run build && pnpm run start
+
+
+> @workspace/api-server@0.0.0 build C:\Users\abhishek\Downloads\localfluence\artifacts\api-server
+> node ./build.mjs
+
+node.exe : 
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (:String) [],    
+ RemoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+  dist\index.mjs       
+            2.0mb
+  dist\pino-worker.mjs 
+          153.4kb
+  dist\pino-file.mjs   
+          142.1kb
+  dist\pino-pretty.mjs 
+          114.6kb
+  dist\thread-stream-wo
+rker.mjs    7.3kb
+  ...and 5 more output 
+files...
+
+Done in 504ms
+
+> @workspace/api-server@0.0.0 start C:\Users\abhishek\Downloads\localfluence\artifacts\api-server
+> node --enable-source-maps ./dist/index.mjs
+
+node:internal/modules/c
+js/loader:1383
+  const err = new 
+Error(message);
+              ^
+
+Error: Cannot find 
+module '@libsql/win32-x
+64-msvc'
+Require stack:
+- C:\Users\abhishek\Dow
+nloads\localfluence\art
+ifacts\api-server\dist\
+index.mjs
+    at Function._resolv
+eFilename (node:interna
+l/modules/cjs/loader:13
+83:15)
+    at 
+defaultResolveImpl (nod
+e:internal/modules/cjs/
+loader:1025:19)
+    at 
+resolveForCJSWithHooks 
+(node:internal/modules/
+cjs/loader:1030:22)
+    at Function._load (
+node:internal/modules/c
+js/loader:1192:37)
+    at TracingChannel.t
+raceSync (node:diagnost
+ics_channel:322:14)
+    at wrapModuleLoad (
+node:internal/modules/c
+js/loader:237:24)
+    at Module.require (
+node:internal/modules/c
+js/loader:1463:12)
+    at require (node:in
+ternal/modules/helpers:
+147:16)
+    at requireNative (C
+:\Users\abhishek\Downlo
+ads\localfluence\node_m
+odules\.pnpm\libsql@0.4
+.7\node_modules\libsql\
+index.js:22:10)
+    at ../../node_modul
+es/.pnpm/libsql@0.4.7/n
+ode_modules/libsql/inde
+x.js (C:\Users\abhishek
+\Downloads\localfluence
+\node_modules\.pnpm\lib
+sql@0.4.7\node_modules\
+libsql\index.js:45:5) {
+  code: 
+'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\abhishe
+k\\Downloads\\localflue
+nce\\artifacts\\api-ser
+ver\\dist\\index.mjs'
+  ]
+}
+
+Node.js v22.19.0
+ΓÇëELIFECYCLEΓÇë Command failed with exit code 1.
+ΓÇëELIFECYCLEΓÇë Command failed with exit code 1.

@@ -1,0 +1,37 @@
+﻿node.exe : [31merror when 
+starting dev server:
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecifi    ed: 
+([31merror wh    en 
+starting dev se    
+rver::String) [],     
+RemoteException
+    + FullyQualifiedEr    
+rorId : NativeComm    
+andError
+ 
+Error: Port 5173 is already 
+in use
+    at Server.onError$1 (file
+:///C:/Users/abhishek/Downloa
+ds/localfluence/node_modules/
+.pnpm/vite@7.3.2_@types+node@
+25.6_4a5fde7658ae5671349e89b5
+d013ed77/node_modules/vite/di
+st/node/chunks/config.js:1493
+3:28)
+    at Server.emit 
+(node:events:519:28)
+    at emitErrorNT 
+(node:net:1976:8)
+    at process.processTicksAn
+dRejections (node:internal/pr
+ocess/task_queues:90:21)[39m

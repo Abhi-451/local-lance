@@ -1,0 +1,89 @@
+﻿node.exe : [31mfailed to 
+load config from C:\Users\abh
+ishek\Downloads\localfluence\
+artifacts\localfluence\vite.c
+onfig.ts[39m
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified    : 
+([31mfailed to .    
+...config.ts[39m:S    
+tring) [], RemoteEx    
+ception
+    + FullyQualifiedErr    
+orId : NativeComman    dError
+ 
+[31merror when starting dev 
+server:
+Error: PORT environment 
+variable is required but was 
+not provided.
+    at file:///C:/Users/abhis
+hek/Downloads/localfluence/ar
+tifacts/localfluence/node_mod
+ules/.vite-temp/vite.config.t
+s.timestamp-1776925941675-778
+a345120845.mjs:10:9
+    at ModuleJob.run (node:in
+ternal/modules/esm/module_job
+:345:25)
+    at async onImport.tracePr
+omise.__proto__ (node:interna
+l/modules/esm/loader:651:26)
+    at async 
+loadConfigFromBundledFile (fi
+le:///C:/Users/abhishek/Downl
+oads/localfluence/node_module
+s/.pnpm/vite@7.3.2_@types+nod
+e@25.6_4a5fde7658ae5671349e89
+b5d013ed77/node_modules/vite/
+dist/node/chunks/config.js:35
+920:12)
+    at async 
+bundleAndLoadConfigFile (file
+:///C:/Users/abhishek/Downloa
+ds/localfluence/node_modules/
+.pnpm/vite@7.3.2_@types+node@
+25.6_4a5fde7658ae5671349e89b5
+d013ed77/node_modules/vite/di
+st/node/chunks/config.js:3580
+8:17)
+    at async 
+loadConfigFromFile (file:///C
+:/Users/abhishek/Downloads/lo
+calfluence/node_modules/.pnpm
+/vite@7.3.2_@types+node@25.6_
+4a5fde7658ae5671349e89b5d013e
+d77/node_modules/vite/dist/no
+de/chunks/config.js:35775:42)
+    at async resolveConfig (f
+ile:///C:/Users/abhishek/Down
+loads/localfluence/node_modul
+es/.pnpm/vite@7.3.2_@types+no
+de@25.6_4a5fde7658ae5671349e8
+9b5d013ed77/node_modules/vite
+/dist/node/chunks/config.js:3
+5424:22)
+    at async _createServer (f
+ile:///C:/Users/abhishek/Down
+loads/localfluence/node_modul
+es/.pnpm/vite@7.3.2_@types+no
+de@25.6_4a5fde7658ae5671349e8
+9b5d013ed77/node_modules/vite
+/dist/node/chunks/config.js:2
+5365:67)
+    at async CAC.<anonymous> 
+(file:///C:/Users/abhishek/Do
+wnloads/localfluence/node_mod
+ules/.pnpm/vite@7.3.2_@types+
+node@25.6_4a5fde7658ae5671349
+e89b5d013ed77/node_modules/vi
+te/dist/node/cli.js:572:18)[
+39m

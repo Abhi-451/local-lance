@@ -1,0 +1,8 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "MTXlqhQHdnXPNDwyfWtVa"
+uri = "file://artifacts/localfluence/public/hero.png"
+type = "image"
+title = "Warm neighborhood cafe scene"

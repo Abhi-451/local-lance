@@ -1,0 +1,32 @@
+﻿
+> @workspace/db@0.0.0 push C:\Users\abhishek\Downloads\localfluence\lib\db
+> drizzle-kit push --config ./drizzle.config.ts
+
+Reading config file 'C:\Users\abhishek\Downloads\localfluence\lib\db\drizzle.config.ts'
+node.exe : 
+DATABASE_URL, ensure 
+the database is 
+provisioned
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (DATABASE_URL,   
+  e... is provision    
+ed:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+C:\Users\abhishek\Downloads\localfluence\lib\db:
+ΓÇëERR_PNPM_RECURSIVE_RUN_FIRST_FAILΓÇë @workspace/db@0.0.0 push: `drizzle-kit push --config ./drizzle.config.ts`
+Exit status 1
