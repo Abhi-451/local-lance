@@ -3,6 +3,7 @@ import {
   useGetInfluencer, 
   getGetInfluencerQueryKey,
   useListMyCampaigns,
+  getListMyCampaignsQueryKey,
   useCreateRequest
 } from "@workspace/api-client-react";
 import { useRoute } from "wouter";
@@ -44,7 +45,10 @@ export default function InfluencerDetail() {
   });
 
   const { data: campaigns } = useListMyCampaigns({
-    query: { enabled: user?.role === "business" }
+    query: { 
+      enabled: user?.role === "business",
+      queryKey: getListMyCampaignsQueryKey()
+    }
   });
 
   const createRequest = useCreateRequest();
