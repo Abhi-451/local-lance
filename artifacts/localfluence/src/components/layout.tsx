@@ -29,6 +29,7 @@ export function Layout({ children }: { children: ReactNode }) {
 
   const navLinks = isAuthenticated
     ? [
+        { href: "/", label: "Home" },
         { href: "/dashboard", label: "Dashboard" },
         { href: "/influencers", label: "Discover" },
         ...(user?.role === "business" ? [{ href: "/campaigns", label: "Campaigns" }] : []),
